@@ -1,0 +1,23 @@
+{
+  "name": "readability-webapp",
+  "version": "0.0.1",
+  "description": "Offline-Capable Readability Webapp",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "readability",
+    "offline",
+    "webapp"
+  ],
+  "author": "akamaozu <uzo@designbymobius.ca>",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.15.1",
+    "express": "^4.13.4",
+    "react": "^15.1.0",
+    "react-dom": "^15.1.0",
+    "readability-api": "^0.4.0"
+  }
+}
