@@ -6,7 +6,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node node_modules/app/server",
     "build-client-behavior": "browserify node_modules/app/client/src/js/behavior.js -o node_modules/app/client/js/behavior.browserified.js",
-    "post-install": "npm run build-client-behavior"
+    "postinstall": "npm run build-client-behavior"
   },
   "keywords": [
     "readability",
