@@ -1,4 +1,6 @@
+.env
+
 node_modules/*
 !node_modules/app
 
-.env
+node_modules/app/client/js/behavior.browserified.js

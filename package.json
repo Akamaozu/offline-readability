@@ -4,7 +4,9 @@
   "description": "Offline-Capable Readability Webapp",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node node_modules/app/server"
+    "start": "node node_modules/app/server",
+    "build-client-behavior": "browserify node_modules/app/client/src/js/behavior.js -o node_modules/app/client/js/behavior.browserified.js",
+    "post-install": "npm run build-client-behavior"
   },
   "keywords": [
     "readability",
@@ -21,6 +23,7 @@
     "express": "^4.13.4",
     "express-session": "^1.14.0",
     "html-entities": "^1.2.0",
+    "jquery": "^3.1.0",
     "jwt-simple": "^0.5.0",
     "react": "^15.1.0",
     "react-dom": "^15.1.0",
